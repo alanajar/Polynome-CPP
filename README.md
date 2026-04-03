@@ -14,7 +14,7 @@
 - [ ] Documenter le constructeur ci-dessus ** EL MAHROUQ Sami **
 - [x] Créer le destructeur - **GHYS Nathan**
 - [ ] Documenter le destructeur
-- [ ] Créer le constructeur de copie
+- [ ] Créer le constructeur de copie **Ala NAjar**
 - [ ] Documenter le constructeur de copie
 - [ ] Implanter un accesseur pour le degré
 - [ ] Documenter l’accesseur pour le degré
