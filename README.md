@@ -12,7 +12,7 @@
 - [x] **Dans l’intérêt du groupe (!)**, créer un `Makefile` facilitant la compilation et l’exécution des tests unitaires - **GHYS Nathan**
 - [ ] Créer le constructeur à deux paramètres (degré et tableau de coefficients)  ** Wassim El mahrouq **
 - [ ] Documenter le constructeur ci-dessus ** EL MAHROUQ Sami **
-- [ ] Créer le destructeur
+- [ ] Créer le destructeur - **GHYS Nathan**
 - [ ] Documenter le destructeur
 - [ ] Créer le constructeur de copie
 - [ ] Documenter le constructeur de copie
