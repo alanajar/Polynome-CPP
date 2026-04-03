@@ -10,35 +10,35 @@
 - [x] Taper la déclaration de la classe `Polynome` **Ala Najar**
 - [] Documenter la déclaration de classe et chacune des données membres
 - [x] **Dans l’intérêt du groupe (!)**, créer un `Makefile` facilitant la compilation et l’exécution des tests unitaires - **GHYS Nathan**
-- [] Créer le constructeur à deux paramètres (degré et tableau de coefficients)  ** Wassim El mahrouq **
-- [] Documenter le constructeur ci-dessus ** EL MAHROUQ Sami **
-- [] Créer le destructeur
-- [] Documenter le destructeur
-- [] Créer le constructeur de copie
-- [] Documenter le constructeur de copie
-- [] Implanter un accesseur pour le degré
-- [] Documenter l’accesseur pour le degré
-- [] Créer le fichier doxyfile (à la main ou avec doxywizard) puis générer la documentation HTML
-- [] Tester le degré d’un polynôme construit et tester chacun de ses coefficients (degre_et_coefficients)
-- [] Copier et adapter le test précédent pour tester un polynôme construit par copie (constructeur_copie)
-- [] Implanter l’`operator <<`
-- [] Documenter l’`operator <<`
-- [] Créer l’operator () qui permet de calculer la valeur du polynôme pour une valeur de x donnée
-- [] Documenter l’`operator ()`
-- [] Tester que l’`operator ()` pour `x=0` donne la valeur du monôme de degré 0 et que pour `x=1`, on a la somme de tous les coefficients (operateur_parentheses)
-- [] Créer les deux `operator []` (**accesseur en lecture et en écriture au coefficient de degré i**)
-- [] Documenter les `operator []`
-- [] Tester que l’`operator []` de lecture donne bien chacun des coefficients du polynôme lorsqu’on fait varier le degré, et que celui d’écriture permet bien de le modifier et que la modification peut être constatée après (operateur_crochets)
-- [] Implanter l’`operator ==`
-- [] Documenter l’`operator ==`
-- [] Tester que l’`operator ==` renvoie vrai lorsqu’on l’appelle sur l’appelle avec deux fois le même polynôme et avec un polynôme et sa copie, mais qu’il renvoie faux avec deux polynôme de degrés différents et deux polynômes de même degré mais qui diffèrent juste par le dernier coefficient (operateur_egalite)
-- [] Implanter l’`operator +`
-- [] Documenter l’`operator +`
-- [] Tester que la somme de deux polynômes (de votre choix) est bien égale au polynôme somme (operateur_somme)
-- [] Implanter la méthode Polynome `Polynome::deriver() const`
-- [] Documenter la méthode précédente
-- [] Tester que la dérivée d’un polynôme général (de votre choix) est correcte (derivation)
-- [] Implanter la méthode Polynome `Polynome::integrer() const`
-- [] Documenter la méthode précédente
-- [] Tester que la primitive d’un polynôme général (de votre choix) est correcte (integration)
-- [] Tester la chaîne produite par l’`opérateur <<` grâce à un `std::ostringstream` (ecriture)
+- [ ] Créer le constructeur à deux paramètres (degré et tableau de coefficients)  ** Wassim El mahrouq **
+- [ ] Documenter le constructeur ci-dessus ** EL MAHROUQ Sami **
+- [ ] Créer le destructeur
+- [ ] Documenter le destructeur
+- [ ] Créer le constructeur de copie
+- [ ] Documenter le constructeur de copie
+- [ ] Implanter un accesseur pour le degré
+- [ ] Documenter l’accesseur pour le degré
+- [ ] Créer le fichier doxyfile (à la main ou avec doxywizard) puis générer la documentation HTML
+- [ ] Tester le degré d’un polynôme construit et tester chacun de ses coefficients (degre_et_coefficients)
+- [ ] Copier et adapter le test précédent pour tester un polynôme construit par copie (constructeur_copie)
+- [ ] Implanter l’`operator <<`
+- [ ] Documenter l’`operator <<`
+- [ ] Créer l’operator () qui permet de calculer la valeur du polynôme pour une valeur de x donnée
+- [ ] Documenter l’`operator ()`
+- [ ] Tester que l’`operator ()` pour `x=0` donne la valeur du monôme de degré 0 et que pour `x=1`, on a la somme de tous les coefficients (operateur_parentheses)
+- [ ] Créer les deux `operator [ ]` (**accesseur en lecture et en écriture au coefficient de degré i**)
+- [ ] Documenter les `operator [ ]`
+- [ ] Tester que l’`operator [ ]` de lecture donne bien chacun des coefficients du polynôme lorsqu’on fait varier le degré, et que celui d’écriture permet bien de le modifier et que la modification peut être constatée après (operateur_crochets)
+- [ ] Implanter l’`operator ==`
+- [ ] Documenter l’`operator ==`
+- [ ] Tester que l’`operator ==` renvoie vrai lorsqu’on l’appelle sur l’appelle avec deux fois le même polynôme et avec un polynôme et sa copie, mais qu’il renvoie faux avec deux polynôme de degrés différents et deux polynômes de même degré mais qui diffèrent juste par le dernier coefficient (operateur_egalite)
+- [ ] Implanter l’`operator +`
+- [ ] Documenter l’`operator +`
+- [ ] Tester que la somme de deux polynômes (de votre choix) est bien égale au polynôme somme (operateur_somme)
+- [ ] Implanter la méthode Polynome `Polynome::deriver() const`
+- [ ] Documenter la méthode précédente
+- [ ] Tester que la dérivée d’un polynôme général (de votre choix) est correcte (derivation)
+- [ ] Implanter la méthode Polynome `Polynome::integrer() const`
+- [ ] Documenter la méthode précédente
+- [ ] Tester que la primitive d’un polynôme général (de votre choix) est correcte (integration)
+- [ ] Tester la chaîne produite par l’`opérateur <<` grâce à un `std::ostringstream` (ecriture)
