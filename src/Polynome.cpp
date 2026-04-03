@@ -1,5 +1,14 @@
+/*!
+ * \file Polynome.cpp
+ * \brief Fonctions permettant l'utilisation d'un polynome
+ * \date 04/2026
+*/
+
 #include "Polynome.hpp"
 
+/*!
+ * \brief Destructeur de la classe
+*/
 Polynome::~Polynome() {
     delete[] this->coeffs;
 }
