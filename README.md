@@ -13,7 +13,7 @@
 - [ ] Créer le constructeur à deux paramètres (degré et tableau de coefficients)  ** Wassim El mahrouq **
 - [ ] Documenter le constructeur ci-dessus ** EL MAHROUQ Sami **
 - [x] Créer le destructeur - **GHYS Nathan**
-- [ ] Documenter le destructeur
+- [x] Documenter le destructeur
 - [x] Créer le constructeur de copie **Ala NAjar**
 - [ ] Documenter le constructeur de copie
 - [ ] Implanter un accesseur pour le degré
