@@ -24,3 +24,17 @@ Polynome& Polynome::operator=(const Polynome& p){
     }
     return *this;
 }
+
+double &Polynome::operator[](size_t i)
+{
+    if (i > degree) throw std::out_of_range("Index out of range");
+
+    return coeffs[i];
+}
+
+double Polynome::operator[](size_t i) const
+{
+    if (i > degree) throw std::out_of_range("Index out of range");
+
+    return coeffs[i];
+}
