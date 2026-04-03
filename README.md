@@ -9,9 +9,9 @@
 - [x] Indiquer dans le `README.md` la liste des membres du groupe (NOM Prénom) - **GHYS Nathan**
 - [x] Taper la déclaration de la classe `Polynome` **Ala Najar**
 - [] Documenter la déclaration de classe et chacune des données membres
-- [] **Dans l’intérêt du groupe (!)**, créer un `Makefile` facilitant la compilation et l’exécution des tests unitaires
+- [x] **Dans l’intérêt du groupe (!)**, créer un `Makefile` facilitant la compilation et l’exécution des tests unitaires - **GHYS Nathan**
 - [] Créer le constructeur à deux paramètres (degré et tableau de coefficients)
-- [] Documenter le constructeur ci-dessus
+- [] Documenter le constructeur ci-dessus ** EL MAHROUQ Sami **
 - [] Créer le destructeur
 - [] Documenter le destructeur
 - [] Créer le constructeur de copie
