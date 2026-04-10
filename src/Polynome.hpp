@@ -17,7 +17,7 @@ class Polynome {
 
         double operator()(const double&) const;
 
-        bool operator==(const Polynome&) const;
+        friend bool operator==(const Polynome&, const Polynome&);
 
         friend std::ostream& operator<<(std::ostream&, const Polynome&);
         Polynome operator+(const Polynome&) const;

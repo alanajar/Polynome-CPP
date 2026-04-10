@@ -8,7 +8,7 @@ TESTSDIR=tests
 all: directories units-tests
 
 units-tests: Polynome
-	$(GCC) $(FLAGS) -o $(BUILDDIR)/units-tests $(TESTSDIR)/units-tests.cpp $(BUILDDIR)/Polynome.o
+	$(GCC) $(FLAGS) -o $(BUILDDIR)/units-tests $(TESTSDIR)/units-tests.cpp $(BUILDDIR)/Polynome.o -lboost_unit_test_framework
 
 Polynome:
 	$(GCC) $(FLAGS) -c $(SOURCEDIR)/Polynome.cpp -o $(BUILDDIR)/Polynome.o

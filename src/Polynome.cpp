@@ -17,14 +17,14 @@ Polynome::Polynome(const Polynome& src) : Polynome(src.degree, src.coeffs) {}
 
 double &Polynome::operator[](size_t i)
 {
-    if (i > degree) throw std::out_of_range("Index out of range");
+    if (i > degree + 1) throw std::out_of_range("Index out of range");
 
     return coeffs[i];
 }
 
 double Polynome::operator[](size_t i) const
 {
-    if (i > degree) throw std::out_of_range("Index out of range");
+    if (i > degree + 1) throw std::out_of_range("Index out of range");
 
     return coeffs[i];
 }
