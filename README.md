@@ -29,7 +29,7 @@
 - [x] Créer les deux `operator [ ]` (**accesseur en lecture et en écriture au coefficient de degré i**) - **GHYS Nathan**
 - [ ] Documenter les `operator [ ]`
 - [ ] Tester que l’`operator [ ]` de lecture donne bien chacun des coefficients du polynôme lorsqu’on fait varier le degré, et que celui d’écriture permet bien de le modifier et que la modification peut être constatée après (operateur_crochets)
-- [ ] Implanter l’`operator ==`
+- [x] Implanter l’`operator ==` **Ala Najar**
 - [ ] Documenter l’`operator ==`
 - [ ] Tester que l’`operator ==` renvoie vrai lorsqu’on l’appelle sur l’appelle avec deux fois le même polynôme et avec un polynôme et sa copie, mais qu’il renvoie faux avec deux polynôme de degrés différents et deux polynômes de même degré mais qui diffèrent juste par le dernier coefficient (operateur_egalite)
 - [ ] Implanter l’`operator +`

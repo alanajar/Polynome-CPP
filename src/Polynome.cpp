@@ -28,6 +28,7 @@ double Polynome::operator[](size_t i) const
 
     return coeffs[i];
 }
+
 ostream& operator<<(ostream& os, const Polynome& p)
 {
     bool premierecoeff = false;
@@ -51,4 +52,17 @@ ostream& operator<<(ostream& os, const Polynome& p)
     }
     if (!premierecoeff) os << "0";
     return os;
+}
+
+
+bool operator==(const Polynome& p1, const Polynome& p2){
+    if (p1.degree != p2.degree){
+        return false;
+    }
+    for (size_t i=0; i<=p1.degree; i++){
+        if (p1.coeffs[i] != p2.coeffs[i]){
+            return false;
+        }
+    }
+    return true;
 }
