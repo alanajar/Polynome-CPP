@@ -35,12 +35,13 @@ BOOST_AUTO_TEST_CASE(AffectationEtComparaison) {
     static Polynome p2(p1);
 
     BOOST_REQUIRE_MESSAGE(p1[0] == coef_p1[0], "L'opérateur d'indéxation ne donne pas le résultat attendu !");
-    BOOST_CHECK_EQUAL(p1 == p1 == false, p2 == p1 == false);
+    BOOST_CHECK_EQUAL(p1 == p1, p2 == p1);
 
-    static Polynome p3(p1);
-    p3[0] = 15;
-    p2[degree+1] = 4;
-    BOOST_CHECK_EQUAL(p1 == p3, p1 == p2);
+    static const double coef_p3[] = { 15, -1.414, 3, 6, 0, 1};
+    static Polynome p3(degree, coef_p3);
+    static const double coef_p4[] = { 3, -1.414, 3, 6, 0, 4};
+    static Polynome p4(degree, coef_p4);
+    BOOST_CHECK_EQUAL(p1 == p3 == false, p1 == p4 == false);
 
     BOOST_REQUIRE_MESSAGE([]() -> bool {
         for (size_t curr = 0; curr < degree + 1; curr++) {
