@@ -16,12 +16,12 @@
 - [x] Documenter le destructeur
 - [x] Créer le constructeur de copie **Ala NAjar**
 - [ ] Documenter le constructeur de copie
-- [ ] Implanter un accesseur pour le degré**Ala Najar**
+- [x] Implanter un accesseur pour le degré**Ala Najar**
 - [ ] Documenter l’accesseur pour le degré
 - [ ] Créer le fichier doxyfile (à la main ou avec doxywizard) puis générer la documentation HTML
 - [ ] Tester le degré d’un polynôme construit et tester chacun de ses coefficients (degre_et_coefficients)
 - [ ] Copier et adapter le test précédent pour tester un polynôme construit par copie (constructeur_copie)
-- [ ] Implanter l’`operator <<` **Ala Najar**
+- [x] Implanter l’`operator <<` **Ala Najar**
 - [ ] Documenter l’`operator <<`
 - [ ] Créer l’operator () qui permet de calculer la valeur du polynôme pour une valeur de x donnée
 - [ ] Documenter l’`operator ()`
