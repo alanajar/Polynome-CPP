@@ -28,10 +28,10 @@ double Polynome::operator[](size_t i) const
 
     return coeffs[i];
 }
-ostream& operator<<(ostream& os, const Polynome& p)
+std::ostream& operator<<(std::ostream& os, const Polynome& p)
 {
     bool premierecoeff = false;
-    for (int i = p.degree; i >= 0; i--) {
+    for (int i = p.getDegree(); i >= 0; i--) {
         double c = p.coeffs[i];
         if (c == 0.0) 
         continue;
