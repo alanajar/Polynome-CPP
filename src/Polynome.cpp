@@ -28,12 +28,7 @@ double Polynome::operator[](size_t i) const
 
     return coeffs[i];
 }
-<<<<<<< HEAD
-
-ostream& operator<<(ostream& os, const Polynome& p)
-=======
 std::ostream& operator<<(std::ostream& os, const Polynome& p)
->>>>>>> 02cb36fe78be1b151eea4f3c12ffb436e7e141aa
 {
     bool premierecoeff = false;
     for (int i = p.getDegree(); i >= 0; i--) {
