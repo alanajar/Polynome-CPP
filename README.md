@@ -18,7 +18,7 @@
 - [ ] Documenter le constructeur de copie
 - [x] Implanter un accesseur pour le degré**Ala Najar**
 - [ ] Documenter l’accesseur pour le degré
-- [ ] Créer le fichier doxyfile (à la main ou avec doxywizard) puis générer la documentation HTML
+- [x] Créer le fichier doxyfile (à la main ou avec doxywizard) puis générer la documentation HTML - **GHYS Nathan**
 - [x] Tester le degré d’un polynôme construit et tester chacun de ses coefficients (degre_et_coefficients) - **GHYS Nathan**
 - [x] Copier et adapter le test précédent pour tester un polynôme construit par copie (constructeur_copie) - **GHYS Nathan**
 - [x] Implanter l’`operator <<` **Ala Najar**
