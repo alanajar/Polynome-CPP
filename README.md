@@ -10,7 +10,7 @@
 - [x] Taper la déclaration de la classe `Polynome` **Ala Najar**
 - [x] Documenter la déclaration de classe et chacune des données membres - **SAID Chafaantie**
 - [x] **Dans l’intérêt du groupe (!)**, créer un `Makefile` facilitant la compilation et l’exécution des tests unitaires - **GHYS Nathan**
-- [x] Créer le constructeur à deux paramètres (degré et tableau de coefficients)  ** Wassim El mahrouq **
+- [x] Créer le constructeur à deux paramètres (degré et tableau de coefficients) - **GHYS Nathan**
 - [ ] Documenter le constructeur ci-dessus ** EL MAHROUQ Sami **
 - [x] Créer le destructeur - **GHYS Nathan**
 - [x] Documenter le destructeur
@@ -18,7 +18,7 @@
 - [x] Documenter le constructeur de copie **Ala NAjar**
 - [x] Implanter un accesseur pour le degré**Ala Najar**
 - [ ] Documenter l’accesseur pour le degré
-- [ ] Créer le fichier doxyfile (à la main ou avec doxywizard) puis générer la documentation HTML
+- [x] Créer le fichier doxyfile (à la main ou avec doxywizard) puis générer la documentation HTML - **GHYS Nathan**
 - [x] Tester le degré d’un polynôme construit et tester chacun de ses coefficients (degre_et_coefficients) - **GHYS Nathan**
 - [x] Copier et adapter le test précédent pour tester un polynôme construit par copie (constructeur_copie) - **GHYS Nathan**
 - [x] Implanter l’`operator <<` **Ala Najar**

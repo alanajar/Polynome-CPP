@@ -78,7 +78,7 @@ BOOST_AUTO_TEST_CASE(Operateurs) {
     static const double coef_p2[] = {4, -2, 3, 1, -2, -1};
     static Polynome p2(degree, coef_p2);
     static Polynome* temp;
-    BOOST_CHECK_NO_THROW(temp = &(p1 + p2));
+    BOOST_CHECK_NO_THROW(*temp = (p1 + p2));
     BOOST_CHECK_MESSAGE([]() -> bool {
         for (size_t currDeg = 0; currDeg < degree; currDeg++) {
             double supposedResult = p1[currDeg] + p2[currDeg];

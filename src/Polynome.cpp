@@ -22,6 +22,12 @@ Polynome::~Polynome() {
      */
 Polynome::Polynome(const Polynome& polynome) : Polynome(polynome.degree, polynome.coeffs) {}
 
+Polynome::Polynome(const size_t& _degree, const double _arr[]) : degree(_degree), coeffs(new double[_degree + 1])
+{
+    for (size_t i = 0; i <= degree; i++)
+        this->coeffs[i] = _arr[i];
+}
+
 double &Polynome::operator[](size_t i)
 {
     if (i > degree + 1) throw std::out_of_range("Index out of range");
