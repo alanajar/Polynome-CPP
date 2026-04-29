@@ -22,6 +22,14 @@ Polynome::~Polynome() {
      */
 Polynome::Polynome(const Polynome& polynome) : Polynome(polynome.degree, polynome.coeffs) {}
 
+/**
+     * @brief Constructeur à deux paramètres.
+     *
+     * Crée une instance de la classe Polynome
+     *
+     * @param _degree Le degré du polynome.
+     * @param _arr Le tableau de coefficients
+     */
 Polynome::Polynome(const size_t& _degree, const double _arr[]) : degree(_degree), coeffs(new double[_degree + 1])
 {
     for (size_t i = 0; i <= degree; i++)
