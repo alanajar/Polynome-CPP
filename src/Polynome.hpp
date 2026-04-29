@@ -71,6 +71,12 @@ public:
     Polynome operator*(const double &) const;
     Polynome operator*(const Polynome &) const;
 
+    /**
+     * @brief Affectation d'un Polynome à un autre
+     *
+     * @param Polynome Polynome de référence pour l'affectation
+     * @return Une référence vers sur le Polynome actuel
+     */
     Polynome &operator=(const Polynome &);
 
     /**
