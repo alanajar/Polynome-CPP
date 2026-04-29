@@ -102,6 +102,7 @@ public:
      * @return Une nouvelle instance de Polynome équivalante à la dérivée du Polynome courant
      */
     Polynome deriver() const;
+    Polynome integrer() const;
 };
 
 #endif

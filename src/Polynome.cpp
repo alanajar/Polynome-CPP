@@ -113,3 +113,14 @@ Polynome Polynome::operator+(const Polynome &p2) const
 
     return newPolynome;
 };
+
+Polynome Polynome::integrer() const {
+    double* tmp = new double[degree+2];
+    tmp[0] = 0.0;
+    for(size_t i=0; i<=degree; i++) {
+        tmp[i+1] = coeffs[i]/(i+1);
+    }
+    Polynome p_tmp(degree+1, tmp);
+    delete[] tmp;
+    return p_tmp;
+}
