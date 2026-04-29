@@ -22,7 +22,7 @@
 - [x] Tester le degré d’un polynôme construit et tester chacun de ses coefficients (degre_et_coefficients) - **GHYS Nathan**
 - [x] Copier et adapter le test précédent pour tester un polynôme construit par copie (constructeur_copie) - **GHYS Nathan**
 - [x] Implanter l’`operator <<` **Ala Najar**
-- [ ] Documenter l’`operator <<`
+- [x] Documenter l’`operator <<`**Ala Najar**
 - [ ] Créer l’operator () qui permet de calculer la valeur du polynôme pour une valeur de x donnée
 - [ ] Documenter l’`operator ()`
 - [x] Tester que l’`operator ()` pour `x=0` donne la valeur du monôme de degré 0 et que pour `x=1`, on a la somme de tous les coefficients (operateur_parentheses)

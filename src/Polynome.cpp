@@ -41,6 +41,17 @@ double Polynome::operator[](size_t i) const
 
     return coeffs[i];
 }
+
+/**
+     * @brief Affichage d'un polynôme 
+     *
+     * Les coefficients nuls ne sont pas affichés
+     * les coefficients égaux à 1 ou -1 sont simplifiés
+     *
+     * @param os Le flux de sortie
+     * @param p Le polynome à afficher
+     * @return Une référence vers le flux de sortie
+     */
 std::ostream& operator<<(std::ostream& os, const Polynome& p)
 {
     bool premierecoeff = false;
