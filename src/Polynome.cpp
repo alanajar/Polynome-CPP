@@ -64,6 +64,18 @@ bool operator==(const Polynome& p1, const Polynome& p2){
     return true;
 }
 
+Polynome &Polynome::operator=(const Polynome &p2)
+{
+    delete[] this->coeffs;
+
+    this->degree = p2.degree;
+    this->coeffs = new double[this->degree + 1];
+
+    for (size_t i = 0; i <= degree; i++)
+        this->coeffs[i] = p2.coeffs[i];
+    return *this;
+}
+
 double Polynome::operator()(const double& x) const  
 {
     double res = 0.0;
