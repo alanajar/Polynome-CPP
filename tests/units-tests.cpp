@@ -69,14 +69,8 @@ BOOST_AUTO_TEST_CASE(Operateurs)
     static size_t degree = 5;
     static Polynome p1(degree, coef_p1);
 
-<<<<<<< HEAD
-    BOOST_CHECK_MESSAGE(p1(0) == p1[degree], "L'opérateur d'appel de fonction ne donne pas le résultat attendu pour x=0 !");
-    BOOST_CHECK_MESSAGE([]() -> bool
-                        {
-=======
     BOOST_CHECK_MESSAGE(p1(0) == coef_p1[0], "L'opérateur d'appel de fonction ne donne pas le résultat attendu pour x=0 !");
     BOOST_CHECK_MESSAGE([]() -> bool {
->>>>>>> 5260eb2a1dad3dd39f3dc59d7aef11c4e02e0bab
         double sum = 0.0;
         for (size_t curr = 0; curr < degree + 1; curr++)
             sum += p1[curr];
