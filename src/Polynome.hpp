@@ -82,6 +82,11 @@ public:
 
     double *getCoeffs() const;
 
+    /**
+     * @brief Dérive le polynome
+     *
+     * @return Une nouvelle instance de Polynome équivalante à la dérivée du Polynome courant
+     */
     Polynome deriver() const;
 };
 

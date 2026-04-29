@@ -74,3 +74,27 @@ double Polynome::operator()(const double& x) const
     }
     return res;
 }
+
+Polynome Polynome::deriver() const
+{
+    if (degree == 0)
+    {
+        double *c = new double[1]{0};
+        Polynome p(0, c);
+        
+        delete[] c;
+        return p;
+    }
+
+    size_t newDegree = this->degree - 1;
+    double *_coeffs = new double[newDegree + 1];
+
+    for (size_t i = this->degree; i > 0; i--)
+        _coeffs[i - 1] = i * this->coeffs[i];
+
+    Polynome newPolynome(newDegree, _coeffs);
+
+    delete[] _coeffs;
+
+    return newPolynome;
+}
