@@ -89,3 +89,14 @@ bool operator==(const Polynome& p1, const Polynome& p2){
     }
     return true;
 }
+
+double Polynome::operator()(const double& x) const  
+{
+    double res = 0.0;
+    double x_puissance = 1.0;
+    for (size_t i=0; i<=degree; i++) {
+        res += coeffs[i] * x_puissance;
+        x_puissance *= x;
+    }
+    return res;
+}
