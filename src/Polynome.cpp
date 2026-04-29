@@ -97,7 +97,12 @@ bool operator==(const Polynome& p1, const Polynome& p2){
     }
     return true;
 }
-
+/**
+     * @brief calculer la valeur du polynome pour une valeur de x donnée
+     *
+     * @param x La valeur de x le polynome
+     * @return La valeur P(x)
+     */
 double Polynome::operator()(const double& x) const  
 {
     double res = 0.0;
