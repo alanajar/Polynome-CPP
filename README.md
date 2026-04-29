@@ -36,7 +36,7 @@
 - [ ] Documenter l’`operator +`
 - [x] Tester que la somme de deux polynômes (de votre choix) est bien égale au polynôme somme (operateur_somme) - **GHYS Nathan**
 - [x] Implanter la méthode Polynome `Polynome::deriver() const` - **GHYS Nathan**
-- [ ] Documenter la méthode précédente - **GHYS Nathan**
+- [x] Documenter la méthode précédente - **GHYS Nathan**
 - [ ] Tester que la dérivée d’un polynôme général (de votre choix) est correcte (derivation)
 - [ ] Implanter la méthode Polynome `Polynome::integrer() const`
 - [ ] Documenter la méthode précédente
