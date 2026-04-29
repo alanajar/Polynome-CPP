@@ -41,7 +41,7 @@ BOOST_AUTO_TEST_CASE(AffectationEtComparaison) {
     static Polynome p3(degree, coef_p3);
     static const double coef_p4[] = { 3, -1.414, 3, 6, 0, 4};
     static Polynome p4(degree, coef_p4);
-    BOOST_CHECK_EQUAL(p1 == p3 == false, p1 == p4 == false);
+    BOOST_CHECK_EQUAL((p1 == p3) == false, (p1 == p4) == false);
 
     BOOST_REQUIRE_MESSAGE([]() -> bool {
         for (size_t curr = 0; curr < degree + 1; curr++) {
@@ -66,7 +66,7 @@ BOOST_AUTO_TEST_CASE(Operateurs) {
     static size_t degree = 5;
     static Polynome p1(degree, coef_p1);
 
-    BOOST_CHECK_MESSAGE(p1(0) == p1[degree], "L'opérateur d'appel de fonction ne donne pas le résultat attendu pour x=0 !");
+    BOOST_CHECK_MESSAGE(p1(0) == coef_p1[0], "L'opérateur d'appel de fonction ne donne pas le résultat attendu pour x=0 !");
     BOOST_CHECK_MESSAGE([]() -> bool {
         double sum = 0.0;
         for (size_t curr = 0; curr < degree + 1; curr++)
@@ -77,12 +77,13 @@ BOOST_AUTO_TEST_CASE(Operateurs) {
 
     static const double coef_p2[] = {4, -2, 3, 1, -2, -1};
     static Polynome p2(degree, coef_p2);
-    static Polynome* temp;
-    BOOST_CHECK_NO_THROW(*temp = (p1 + p2));
+    static Polynome temp(0, new double[1]{0});
+
+    BOOST_CHECK_NO_THROW(temp = (p1 + p2));
     BOOST_CHECK_MESSAGE([]() -> bool {
         for (size_t currDeg = 0; currDeg < degree; currDeg++) {
             double supposedResult = p1[currDeg] + p2[currDeg];
-            if ((*temp)[currDeg] != supposedResult) return false;
+            if (temp[currDeg] != supposedResult) return false;
         }
 
         return true;
