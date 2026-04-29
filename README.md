@@ -10,7 +10,7 @@
 - [x] Taper la déclaration de la classe `Polynome` **Ala Najar**
 - [x] Documenter la déclaration de classe et chacune des données membres - **SAID Chafaantie**
 - [x] **Dans l’intérêt du groupe (!)**, créer un `Makefile` facilitant la compilation et l’exécution des tests unitaires - **GHYS Nathan**
-- [x] Créer le constructeur à deux paramètres (degré et tableau de coefficients)  ** Wassim El mahrouq **
+- [x] Créer le constructeur à deux paramètres (degré et tableau de coefficients) - **GHYS Nathan**
 - [ ] Documenter le constructeur ci-dessus ** EL MAHROUQ Sami **
 - [x] Créer le destructeur - **GHYS Nathan**
 - [x] Documenter le destructeur
