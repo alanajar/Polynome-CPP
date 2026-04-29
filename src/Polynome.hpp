@@ -55,29 +55,42 @@ public:
      */
     friend bool operator==(const Polynome &, const Polynome &);
 
-        Polynome& operator=(const Polynome&);
-        
-        /**
-        * @brief Accès en lecture seule au coefficient de degré i
-        *
-        * Permet de lire le coefficient 
-        *
-        * @param i L'indice du coefficient
-        * @return Une référence constante vers le coefficient de degré i
-        */
-        const double& operator[](size_t i) const;
+    /**
+     * @brief Affichage d'un polynôme 
+     *
+     * Les coefficients nuls ne sont pas affichés
+     * les coefficients égaux à 1 ou -1 sont simplifiés
+     *
+     * @param os Le flux de sortie
+     * @param p Le polynome à afficher
+     * @return Une référence vers le flux de sortie
+     */
+    friend std::ostream &operator<<(std::ostream &, const Polynome &);
+    Polynome operator+(const Polynome &) const;
+    Polynome operator-(const Polynome &) const;
+    Polynome operator*(const double &) const;
+    Polynome operator*(const Polynome &) const;
 
-        /**
-        * @brief Accès en écriture au coefficient de degré i
-        *
-        * Permet de modifier le coefficient 
-        *
-        * @param i L'indice du coefficient
-        * @return Une référence modifiable vers le coefficient de degré i
-        */
-        double& operator[](size_t);
+    Polynome &operator=(const Polynome &);
 
+    /**
+     * @brief Accès en lecture seule au coefficient de degré i
+     *
+     * Permet de lire le coefficient
+     *
+     * @param i L'indice du coefficient
+     * @return Une référence constante vers le coefficient de degré i
+     */
     const double &operator[](size_t i) const;
+
+    /**
+     * @brief Accès en écriture au coefficient de degré i
+     *
+     * Permet de modifier le coefficient
+     *
+     * @param i L'indice du coefficient
+     * @return Une référence modifiable vers le coefficient de degré i
+     */
     double &operator[](size_t);
 
     /**
