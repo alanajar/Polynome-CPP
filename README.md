@@ -30,7 +30,7 @@
 - [x] Documenter les `operator [ ]` **Ala Najar**
 - [x] Tester que l’`operator [ ]` de lecture donne bien chacun des coefficients du polynôme lorsqu’on fait varier le degré, et que celui d’écriture permet bien de le modifier et que la modification peut être constatée après (operateur_crochets) - **GHYS Nathan**
 - [x] Implanter l’`operator ==` **Ala Najar**
-- [ ] Documenter l’`operator ==`
+- [x] Documenter l’`operator ==` - **GHYS Nathan**
 - [x] Tester que l’`operator ==` renvoie vrai lorsqu’on l’appelle sur l’appelle avec deux fois le même polynôme et avec un polynôme et sa copie, mais qu’il renvoie faux avec deux polynôme de degrés différents et deux polynômes de même degré mais qui diffèrent juste par le dernier coefficient (operateur_egalite) - **GHYS Nathan**
 - [x] Implanter l’`operator +` - **GHYS Nathan**
 - [x] Documenter l’`operator +` - **GHYS Nathan**
