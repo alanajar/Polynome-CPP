@@ -11,7 +11,7 @@
 - [x] Documenter la déclaration de classe et chacune des données membres - **SAID Chafaantie**
 - [x] **Dans l’intérêt du groupe (!)**, créer un `Makefile` facilitant la compilation et l’exécution des tests unitaires - **GHYS Nathan**
 - [x] Créer le constructeur à deux paramètres (degré et tableau de coefficients) - **GHYS Nathan**
-- [ ] Documenter le constructeur ci-dessus **GHYS Nathan**
+- [x] Documenter le constructeur ci-dessus **GHYS Nathan**
 - [x] Créer le destructeur - **GHYS Nathan**
 - [x] Documenter le destructeur
 - [x] Créer le constructeur de copie **Ala NAjar**
