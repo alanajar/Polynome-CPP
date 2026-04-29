@@ -1,35 +1,11 @@
-/*!
- * \file Polynome.cpp
- * \brief Fonctions permettant l'utilisation d'un polynome
- * \date 04/2026
-*/
-
 #include "Polynome.hpp"
 
-/*!
- * \brief Destructeur de la classe
-*/
 Polynome::~Polynome() {
     delete[] this->coeffs;
 }
 
-/**
-     * @brief Constructeur de copie.
-     *
-     * Effectue une copie du polynôme source
-     *
-     * @param polynome Le polynôme à copier.
-     */
 Polynome::Polynome(const Polynome& polynome) : Polynome(polynome.degree, polynome.coeffs) {}
 
-/**
-     * @brief Constructeur à deux paramètres.
-     *
-     * Crée une instance de la classe Polynome
-     *
-     * @param _degree Le degré du polynome.
-     * @param _arr Le tableau de coefficients
-     */
 Polynome::Polynome(const size_t& _degree, const double _arr[]) : degree(_degree), coeffs(new double[_degree + 1])
 {
     for (size_t i = 0; i <= degree; i++)
@@ -50,16 +26,6 @@ const double& Polynome::operator[](size_t i) const
     return coeffs[i];
 }
 
-/**
-     * @brief Affichage d'un polynôme 
-     *
-     * Les coefficients nuls ne sont pas affichés
-     * les coefficients égaux à 1 ou -1 sont simplifiés
-     *
-     * @param os Le flux de sortie
-     * @param p Le polynome à afficher
-     * @return Une référence vers le flux de sortie
-     */
 std::ostream& operator<<(std::ostream& os, const Polynome& p)
 {
     bool premierecoeff = false;
@@ -97,12 +63,7 @@ bool operator==(const Polynome& p1, const Polynome& p2){
     }
     return true;
 }
-/**
-     * @brief calculer la valeur du polynome pour une valeur de x donnée
-     *
-     * @param x La valeur de x le polynome
-     * @return La valeur P(x)
-     */
+
 double Polynome::operator()(const double& x) const  
 {
     double res = 0.0;
