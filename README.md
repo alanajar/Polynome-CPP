@@ -27,7 +27,7 @@
 - [x] Documenter l’`operator ()` **Ala Najar**
 - [x] Tester que l’`operator ()` pour `x=0` donne la valeur du monôme de degré 0 et que pour `x=1`, on a la somme de tous les coefficients (operateur_parentheses)
 - [x] Créer les deux `operator [ ]` (**accesseur en lecture et en écriture au coefficient de degré i**) - **GHYS Nathan**
-- [ ] Documenter les `operator [ ]`
+- [x] Documenter les `operator [ ]` **Ala Najar**
 - [x] Tester que l’`operator [ ]` de lecture donne bien chacun des coefficients du polynôme lorsqu’on fait varier le degré, et que celui d’écriture permet bien de le modifier et que la modification peut être constatée après (operateur_crochets) - **GHYS Nathan**
 - [x] Implanter l’`operator ==` **Ala Najar**
 - [ ] Documenter l’`operator ==`
