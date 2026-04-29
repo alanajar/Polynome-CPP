@@ -80,6 +80,11 @@ public:
         return this->degree;
     };
 
+    /**
+     * @brief Lecture des coefficients du Polynome
+     *
+     * @return Pointeur sur le premier coefficient du Polynome
+     */
     double *getCoeffs() const;
 
     /**

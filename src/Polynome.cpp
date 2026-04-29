@@ -98,3 +98,18 @@ Polynome Polynome::deriver() const
 
     return newPolynome;
 }
+
+Polynome Polynome::operator+(const Polynome &p2) const
+{
+    size_t maxDegree = this->degree > p2.degree ? this->degree : p2.degree;
+    double *_coeffs = new double[maxDegree + 1];
+
+    for (size_t i = 0; i <= maxDegree; i++)
+        _coeffs[i] = ((this->degree >= i ? this->coeffs[i] : 0.0) + (p2.degree >= i ? p2.coeffs[i] : 0.0));
+
+    Polynome newPolynome(maxDegree, _coeffs);
+
+    delete[] _coeffs;
+
+    return newPolynome;
+};
