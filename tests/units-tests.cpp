@@ -116,3 +116,14 @@ BOOST_AUTO_TEST_CASE(derivation)
     Polynome derivee = p.deriver();
     BOOST_CHECK(derivee == attendu);
 }
+
+BOOST_AUTO_TEST_CASE(ecriture)
+{
+    double c[] = {1.0, 2.0, 3.0};
+    Polynome p(2, c);
+
+    std::ostringstream oss;
+    oss << p;
+
+    BOOST_CHECK_EQUAL(oss.str(), "3x^2+2x+1");
+}

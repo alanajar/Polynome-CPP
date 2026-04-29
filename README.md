@@ -41,4 +41,4 @@
 - [x] Implanter la méthode Polynome `Polynome::integrer() const` **Ala Najar**
 - [x] Documenter la méthode précédente **Ala Najar**
 - [x] Tester que la primitive d’un polynôme général (de votre choix) est correcte (integration) **Ala najar**
-- [ ] Tester la chaîne produite par l’`opérateur <<` grâce à un `std::ostringstream` (ecriture)
+- [x] Tester la chaîne produite par l’`opérateur <<` grâce à un `std::ostringstream` (ecriture) **Ala najar**
