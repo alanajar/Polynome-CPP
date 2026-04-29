@@ -27,7 +27,7 @@ class Polynome {
 
         Polynome& operator=(const Polynome&);
 
-        double operator[](size_t) const;
+        const double& operator[](size_t i) const;
         double& operator[](size_t);
 
         inline size_t getDegree() const {

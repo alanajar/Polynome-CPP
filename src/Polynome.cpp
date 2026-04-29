@@ -13,7 +13,14 @@ Polynome::~Polynome() {
     delete[] this->coeffs;
 }
 
-Polynome::Polynome(const Polynome& src) : Polynome(src.degree, src.coeffs) {}
+/**
+     * @brief Constructeur de copie.
+     *
+     * Effectue une copie du polynôme source
+     *
+     * @param polynome Le polynôme à copier.
+     */
+Polynome::Polynome(const Polynome& polynome) : Polynome(polynome.degree, polynome.coeffs) {}
 
 double &Polynome::operator[](size_t i)
 {

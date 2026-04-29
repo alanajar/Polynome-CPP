@@ -15,7 +15,7 @@
 - [x] Créer le destructeur - **GHYS Nathan**
 - [x] Documenter le destructeur
 - [x] Créer le constructeur de copie **Ala NAjar**
-- [ ] Documenter le constructeur de copie
+- [x] Documenter le constructeur de copie **Ala NAjar**
 - [x] Implanter un accesseur pour le degré**Ala Najar**
 - [ ] Documenter l’accesseur pour le degré
 - [ ] Créer le fichier doxyfile (à la main ou avec doxywizard) puis générer la documentation HTML
