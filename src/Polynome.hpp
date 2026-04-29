@@ -30,6 +30,10 @@ class Polynome {
         const double& operator[](size_t i) const;
         double& operator[](size_t);
 
+        /**
+        * @brief lecture du degré du polynome.
+        * @return Le degré du polynome.
+        */
         inline size_t getDegree() const {
             return this->degree;
         };
