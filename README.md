@@ -39,6 +39,6 @@
 - [x] Documenter la méthode précédente - **GHYS Nathan**
 - [ ] Tester que la dérivée d’un polynôme général (de votre choix) est correcte (derivation)
 - [x] Implanter la méthode Polynome `Polynome::integrer() const` **Ala Najar**
-- [ ] Documenter la méthode précédente
+- [x] Documenter la méthode précédente **Ala Najar**
 - [ ] Tester que la primitive d’un polynôme général (de votre choix) est correcte (integration)
 - [ ] Tester la chaîne produite par l’`opérateur <<` grâce à un `std::ostringstream` (ecriture)
