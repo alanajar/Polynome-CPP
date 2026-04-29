@@ -1,25 +1,9 @@
-/*!
- * \file Polynome.cpp
- * \brief Fonctions permettant l'utilisation d'un polynome
- * \date 04/2026
-*/
-
 #include "Polynome.hpp"
 
-/*!
- * \brief Destructeur de la classe
-*/
 Polynome::~Polynome() {
     delete[] this->coeffs;
 }
 
-/**
-     * @brief Constructeur de copie.
-     *
-     * Effectue une copie du polynôme source
-     *
-     * @param polynome Le polynôme à copier.
-     */
 Polynome::Polynome(const Polynome& polynome) : Polynome(polynome.degree, polynome.coeffs) {}
 
 Polynome::Polynome(const size_t& _degree, const double _arr[]) : degree(_degree), coeffs(new double[_degree + 1])
@@ -35,23 +19,13 @@ double &Polynome::operator[](size_t i)
     return coeffs[i];
 }
 
-double Polynome::operator[](size_t i) const
+const double& Polynome::operator[](size_t i) const
 {
     if (i > degree + 1) throw std::out_of_range("Index out of range");
 
     return coeffs[i];
 }
 
-/**
-     * @brief Affichage d'un polynôme 
-     *
-     * Les coefficients nuls ne sont pas affichés
-     * les coefficients égaux à 1 ou -1 sont simplifiés
-     *
-     * @param os Le flux de sortie
-     * @param p Le polynome à afficher
-     * @return Une référence vers le flux de sortie
-     */
 std::ostream& operator<<(std::ostream& os, const Polynome& p)
 {
     bool premierecoeff = false;
@@ -100,3 +74,42 @@ double Polynome::operator()(const double& x) const
     }
     return res;
 }
+
+Polynome Polynome::deriver() const
+{
+    if (degree == 0)
+    {
+        double *c = new double[1]{0};
+        Polynome p(0, c);
+        
+        delete[] c;
+        return p;
+    }
+
+    size_t newDegree = this->degree - 1;
+    double *_coeffs = new double[newDegree + 1];
+
+    for (size_t i = this->degree; i > 0; i--)
+        _coeffs[i - 1] = i * this->coeffs[i];
+
+    Polynome newPolynome(newDegree, _coeffs);
+
+    delete[] _coeffs;
+
+    return newPolynome;
+}
+
+Polynome Polynome::operator+(const Polynome &p2) const
+{
+    size_t maxDegree = this->degree > p2.degree ? this->degree : p2.degree;
+    double *_coeffs = new double[maxDegree + 1];
+
+    for (size_t i = 0; i <= maxDegree; i++)
+        _coeffs[i] = ((this->degree >= i ? this->coeffs[i] : 0.0) + (p2.degree >= i ? p2.coeffs[i] : 0.0));
+
+    Polynome newPolynome(maxDegree, _coeffs);
+
+    delete[] _coeffs;
+
+    return newPolynome;
+};

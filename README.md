@@ -11,7 +11,7 @@
 - [x] Documenter la déclaration de classe et chacune des données membres - **SAID Chafaantie**
 - [x] **Dans l’intérêt du groupe (!)**, créer un `Makefile` facilitant la compilation et l’exécution des tests unitaires - **GHYS Nathan**
 - [x] Créer le constructeur à deux paramètres (degré et tableau de coefficients) - **GHYS Nathan**
-- [ ] Documenter le constructeur ci-dessus ** EL MAHROUQ Sami **
+- [x] Documenter le constructeur ci-dessus **GHYS Nathan**
 - [x] Créer le destructeur - **GHYS Nathan**
 - [x] Documenter le destructeur
 - [x] Créer le constructeur de copie **Ala NAjar**
@@ -35,8 +35,8 @@
 - [ ] Implanter l’`operator +`
 - [ ] Documenter l’`operator +`
 - [x] Tester que la somme de deux polynômes (de votre choix) est bien égale au polynôme somme (operateur_somme) - **GHYS Nathan**
-- [ ] Implanter la méthode Polynome `Polynome::deriver() const`
-- [ ] Documenter la méthode précédente
+- [x] Implanter la méthode Polynome `Polynome::deriver() const` - **GHYS Nathan**
+- [x] Documenter la méthode précédente - **GHYS Nathan**
 - [ ] Tester que la dérivée d’un polynôme général (de votre choix) est correcte (derivation)
 - [ ] Implanter la méthode Polynome `Polynome::integrer() const`
 - [ ] Documenter la méthode précédente
