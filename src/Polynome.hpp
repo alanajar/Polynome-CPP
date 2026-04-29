@@ -48,6 +48,11 @@ public:
      */
     double operator()(const double &) const;
 
+    /**
+     * @brief Comparer deux Polynomes
+     *
+     * @return Un booléen vrai/faux
+     */
     friend bool operator==(const Polynome &, const Polynome &);
 
     /**
