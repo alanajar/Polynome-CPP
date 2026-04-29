@@ -104,3 +104,15 @@ BOOST_AUTO_TEST_CASE(integration)
     Polynome primitive = p.integrer();
     BOOST_CHECK_MESSAGE(primitive == attendu, "l'integrale marche bien");
 }
+
+BOOST_AUTO_TEST_CASE(derivation)
+{
+    double c[]  = {1.0, 2.0, 3.0, 4.0};
+    double cd[] = {2.0, 6.0, 12.0};
+
+    Polynome p(3, c);
+    Polynome attendu(2, cd);
+
+    Polynome derivee = p.deriver();
+    BOOST_CHECK(derivee == attendu);
+}

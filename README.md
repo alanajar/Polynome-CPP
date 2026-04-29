@@ -37,7 +37,7 @@
 - [x] Tester que la somme de deux polynômes (de votre choix) est bien égale au polynôme somme (operateur_somme) - **GHYS Nathan**
 - [x] Implanter la méthode Polynome `Polynome::deriver() const` - **GHYS Nathan**
 - [x] Documenter la méthode précédente - **GHYS Nathan**
-- [ ] Tester que la dérivée d’un polynôme général (de votre choix) est correcte (derivation)
+- [x] Tester que la dérivée d’un polynôme général (de votre choix) est correcte (derivation)**Ala NAjar**
 - [x] Implanter la méthode Polynome `Polynome::integrer() const` **Ala Najar**
 - [x] Documenter la méthode précédente **Ala Najar**
 - [x] Tester que la primitive d’un polynôme général (de votre choix) est correcte (integration) **Ala najar**
