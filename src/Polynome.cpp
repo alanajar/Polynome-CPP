@@ -35,7 +35,7 @@ double &Polynome::operator[](size_t i)
     return coeffs[i];
 }
 
-double Polynome::operator[](size_t i) const
+const double& Polynome::operator[](size_t i) const
 {
     if (i > degree + 1) throw std::out_of_range("Index out of range");
 
