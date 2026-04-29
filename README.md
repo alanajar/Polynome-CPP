@@ -32,8 +32,8 @@
 - [x] Implanter l’`operator ==` **Ala Najar**
 - [ ] Documenter l’`operator ==`
 - [x] Tester que l’`operator ==` renvoie vrai lorsqu’on l’appelle sur l’appelle avec deux fois le même polynôme et avec un polynôme et sa copie, mais qu’il renvoie faux avec deux polynôme de degrés différents et deux polynômes de même degré mais qui diffèrent juste par le dernier coefficient (operateur_egalite) - **GHYS Nathan**
-- [ ] Implanter l’`operator +`
-- [ ] Documenter l’`operator +`
+- [x] Implanter l’`operator +` - **GHYS Nathan**
+- [x] Documenter l’`operator +` - **GHYS Nathan**
 - [x] Tester que la somme de deux polynômes (de votre choix) est bien égale au polynôme somme (operateur_somme) - **GHYS Nathan**
 - [x] Implanter la méthode Polynome `Polynome::deriver() const` - **GHYS Nathan**
 - [x] Documenter la méthode précédente - **GHYS Nathan**
